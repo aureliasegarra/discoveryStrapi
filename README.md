@@ -5,9 +5,8 @@
 ## Illustration
 ![Exemple](images/screenshot.png)
 
-## Language
-- html5
-- css3
+## Language/Tools
+- Strapi
 - javascript / React
 - PostgreSQL
 - Node
