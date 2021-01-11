@@ -3,7 +3,7 @@
 ## What is Strapi ? Headless CMS and what can I do ? Let's go!
 
 ## Illustration
-![Exemple]()
+![Exemple](images/screenshot.png)
 
 ## Language
 - html5
