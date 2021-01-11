@@ -1,0 +1,45 @@
+{
+  "kind": "collectionType",
+  "collectionName": "animations",
+  "info": {
+    "name": "Animations",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "Date": {
+      "type": "datetime"
+    },
+    "Title": {
+      "type": "string"
+    },
+    "Description": {
+      "type": "richtext"
+    },
+    "Illustration": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "category": {
+      "model": "categories"
+    },
+    "author": {
+      "model": "author"
+    },
+    "categories": {
+      "via": "animations",
+      "collection": "categories"
+    }
+  }
+}

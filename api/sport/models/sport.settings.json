@@ -1,0 +1,43 @@
+{
+  "kind": "collectionType",
+  "collectionName": "sports",
+  "info": {
+    "name": "Sport",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "Description": {
+      "type": "richtext"
+    },
+    "Title": {
+      "type": "string"
+    },
+    "Date": {
+      "type": "datetime",
+      "required": true
+    },
+    "Illustration": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "files",
+        "images",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": true
+    },
+    "author": {
+      "model": "author"
+    },
+    "categories": {
+      "via": "sports",
+      "collection": "categories"
+    }
+  }
+}

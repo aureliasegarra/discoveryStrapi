@@ -1,0 +1,28 @@
+{
+  "kind": "collectionType",
+  "collectionName": "categories",
+  "info": {
+    "name": "Catégories",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "Title": {
+      "type": "string"
+    },
+    "sports": {
+      "collection": "sport",
+      "via": "categories",
+      "dominant": true
+    },
+    "animations": {
+      "collection": "animations",
+      "via": "categories",
+      "dominant": true
+    }
+  }
+}
